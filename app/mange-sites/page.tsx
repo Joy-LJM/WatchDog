@@ -1,38 +1,13 @@
-'use client'
-import React, { useState } from 'react'
+import { Metadata } from 'next';
+import React from 'react'
+import ManageSites from './ManageSites';
 
-export default function ManageSites() {
-    const [site, setSite]=useState("")
+export const metadata: Metadata = {
+  title: "TimeLock - Manage Sites",
+  description: "Add a site to your TimeLock list",
+};
+export default function Page() {
 
-    const handleSiteChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
-      
-      setSite(e.target.value)
-    }
-  const handleAdd = () => {
-    console.log(site)
+  return      <ManageSites/>
 
-  }
-  return (
-      <div className="flex w-auto">
-        <div className="m-8 text-left border rounded-sm border-gray-200 p-10 w-lg">
-          <h1 className="font-bold">Add a site</h1>
-          <div >
-          <input type="text" placeholder="youtube.com"
-          value={site}
-          onChange={handleSiteChange}
-          required
-          className="border valid:border-sky-300 focus:outline-none pl-1 py-2 rounded-sm my-5 text-black w-xs" 
-          />
-          <button className="transition delay-150 duration-300 ease-in-out bg-sky-500 text-white hover:bg-sky-700  cursor-pointer rounded-sm p-2 px-5  ml-3" onClick={handleAdd}>Add</button>
-          </div>
-           {site &&<div>
-          <div  className="my-8 text-left border rounded-sm border-gray-200 p-5 w-sm">
-          <h3>{site}</h3>
-          <div>2hrs</div>
-        </div>
-        </div>}
-        </div>
-       
-       </div>
-  )
 }

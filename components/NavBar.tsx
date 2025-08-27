@@ -14,11 +14,7 @@ const categories = [
   id:'dashboard',
   href:'/dashboard'
   },
-  {
-    name: 'Settings',
-   id:'settings',
-   href:'/settings'
-  },
+  
 ]
 export default function NavBar() {
   const pathname = usePathname()
