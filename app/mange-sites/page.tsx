@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 
 export default function ManageSites() {
@@ -24,8 +25,14 @@ export default function ManageSites() {
           />
           <button className="transition delay-150 duration-300 ease-in-out bg-sky-500 text-white hover:bg-sky-700  cursor-pointer rounded-sm p-2 px-5  ml-3" onClick={handleAdd}>Add</button>
           </div>
+           {site &&<div>
+          <div  className="my-8 text-left border rounded-sm border-gray-200 p-5 w-sm">
+          <h3>{site}</h3>
+          <div>2hrs</div>
         </div>
-  
+        </div>}
+        </div>
+       
        </div>
   )
 }

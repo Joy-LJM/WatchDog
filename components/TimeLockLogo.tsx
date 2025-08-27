@@ -1,4 +1,4 @@
-export default function WatchDogLogo() {
+export default function TimeLockLogo() {
   return (
   <svg xmlns="http://www.w3.org/2000/svg" width="280" height="40" viewBox="0 0 560 180" role="img" aria-label="TimeLock logo" className="flex-1">
   <rect width="560" height="180" fill="none"/>
@@ -15,8 +15,8 @@ export default function WatchDogLogo() {
 
   <g transform="translate(170,38) skewX(-8)">
     <text x="0" y="88"
-          fontFamily="Fredoka One, Baloo 2, Poppins, Segoe UI, system-ui, sans-serif"
-          fontSize="72" fontWeight="700" letterSpacing="1"
+          fontFamily="Bree Serif,Bree Serif Fallback"
+          fontSize="90" fontWeight="700" letterSpacing="1"
           fill="#539cff">
       Time<tspan>Lock</tspan>
     </text>
