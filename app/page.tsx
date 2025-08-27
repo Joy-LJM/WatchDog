@@ -1,13 +1,4 @@
 "use client";
-
-
-
 export default function Home() {
-
-
-  return (
-    <div>
-eee
-    </div>
-  );
+  return <div>eee</div>;
 }
