@@ -7,7 +7,7 @@ const categories = [
   {
     name: "Manage Sites",
     id: "manageSites",
-    href: "/mange-sites",
+    href: "/manage-sites",
   },
   {
     name: "Dashboard",

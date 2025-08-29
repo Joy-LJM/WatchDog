@@ -30,7 +30,7 @@ export default function ManageSites() {
           <button className="transition delay-150 duration-300 ease-in-out bg-sky-500 text-white hover:bg-sky-700  cursor-pointer rounded-sm p-2 px-5  ml-3" onClick={handleAdd}>Add</button>
         </form>
         {siteList.length > 0 && (
-          <div className="mt-8 space-y-4">
+          <div className="mt-2 space-y-4">
             {siteList.map((s, idx) => (
               <div
                 key={idx}
